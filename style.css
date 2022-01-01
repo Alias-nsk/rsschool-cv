@@ -25,6 +25,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .nav-link {
@@ -39,18 +40,32 @@ body {
     color:rgb(0, 0, 0);
 }
 
+.list-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 15px 50px;
+    background-color: rgb(71, 172, 71);
+}
+
+.year-font {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+}
+
 a {
     text-decoration: none;   
 }
 
 .header {
-    border: 1px solid red;
     background-color: rosybrown;
     font-size: 18px;
 }
 
-.main {
-    border: 1px solid rgb(0, 255, 106);
+.main-container {
     margin-bottom: auto;
 }
 
@@ -88,8 +103,25 @@ a {
     content: url('/assets/svg/4.svg');
 }
 .footer {
-    border: 1px solid rgb(30, 16, 218);
+    
 }
+
+.section-contacts {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .skill-item {
+    font-size: 24px;
+ }
+
+ .education-item {
+    font-size: 24px;
+ }
+
+ .languages-item {
+    font-size: 24px;
+ }
 
 #profile {
     display: flex;
@@ -97,7 +129,19 @@ a {
     padding: 50px 30px 35px;
 }
 
+#contacts {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     font-size: 32px;
 }
 
+p {
+    font-size: 20px;
+}
+
+pre {
+    font-size: 20px;
+}
