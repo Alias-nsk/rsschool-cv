@@ -1,14 +1,147 @@
-html, body {
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth; 
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0; 
     padding: 0;
-    margin: 0;
-    color: #060606;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  transition: .3s;
+  color:rgb(255, 255, 255);
+}
+
+.contact-list {
+    list-style: none;
+    color:rgb(0, 0, 0);
+}
+
+.list-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 15px 50px;
+    background-color: rgb(71, 172, 71);
+}
+
+.year-font {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;   
+}
+
+.header {
+    background-color: rosybrown;
+    font-size: 18px;
+}
+
+.main-container {
+    margin-bottom: auto;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.contact-item {
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-left: 10px;
+    font-size: 18px;
+    color:rgb(0, 0, 0);
+}
+
+.contact-item::before {   
+    background-size: contain;
+}
+
+.contact-item:nth-child(1):before {
+    content: url('/assets/svg/1.svg');
+}
+
+.contact-item:nth-child(2):before {
+    content: url('/assets/svg/2.svg');
+}
+.contact-item:nth-child(3):before {
+    content: url('/assets/svg/3.svg');
+}
+.contact-item:nth-child(4):before {
+    content: url('/assets/svg/4.svg');
+}
+.footer {
+    
+}
+
+.section-contacts {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .skill-item {
+    font-size: 24px;
+ }
+
+ .education-item {
+    font-size: 24px;
+ }
+
+ .languages-item {
+    font-size: 24px;
+ }
+
+#profile {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 30px 35px;
+}
+
+#contacts {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 20px;
+}
+
+pre {
+    font-size: 20px;
 }
