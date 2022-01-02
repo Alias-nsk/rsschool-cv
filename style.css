@@ -6,9 +6,6 @@ html {
     scroll-behavior: smooth; 
 }
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     min-height: 100vh;
     margin: 0; 
     padding: 0;
@@ -18,6 +15,27 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.container-contacts {
+    min-width: 60%;
+}
+
+.container-about {
+    margin: 20px auto auto -50px;
+    min-width: 40%;
+}
+
+.contacts-title {
+    margin: 20px 0 0 50px;
+}
+
+.about-title {
+    margin: 0 60px;
+}
+
+.languages-title {
+    margin: 70px -90px 20px;
 }
 
 .nav-list {
@@ -47,7 +65,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 15px 50px;
-    background-color: rgb(71, 172, 71);
+    background-color: rgb(62, 233, 10);
 }
 
 .year-font {
@@ -80,7 +98,7 @@ a {
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
-    padding-left: 10px;
+    padding-left: 20px;
     font-size: 18px;
     color:rgb(0, 0, 0);
 }
@@ -102,36 +120,74 @@ a {
 .contact-item:nth-child(4):before {
     content: url('/assets/svg/4.svg');
 }
-.footer {
-    
+
+.section-about {
+    display: flex;
+    min-width: 600px;
+ }
+
+ .section-skills {
+     display: flex;
+ }
+
+ .section-projects-lang {
+    display: flex;
+ }
+
+ .skills-title {
+     margin: 20px 0 0 50px;
+ }
+
+ .education-title {
+    margin: 0 280px;
+ }
+
+ .code-examples-title {
+    margin: 0 50px;
+ }
+ 
+ .code-examples {
+    margin: 0 20px;
+ }
+
+ .container-skills {
+     min-width: 40%;
+ }
+ .container-education {
+    min-width: 60%;
+    margin: 20px 15px;
+ }
+
+ .container-projects {
+    min-width: 60%;
+    margin: 50px;
+ }
+
+.projects {
+    margin: 0 -50px;
 }
 
-.section-contacts {
-    display: flex;
-    flex-wrap: wrap;
+ .container-languages {
+    min-width: 40%;
  }
 
  .skill-item {
-    font-size: 24px;
+    font-size: 18px;
  }
 
  .education-item {
-    font-size: 24px;
+    font-size: 18px;
+    margin: 0 200px;
  }
 
  .languages-item {
-    font-size: 24px;
+    font-size: 18px;
+    margin: 10px -175px;
  }
 
 #profile {
     display: flex;
     justify-content: space-around;
-    padding: 50px 30px 35px;
-}
-
-#contacts {
-    display: flex;
-    flex-direction: column;
 }
 
 h1 {
@@ -139,9 +195,10 @@ h1 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 pre {
-    font-size: 20px;
+    font-size: 18px;
 }
