@@ -6,8 +6,9 @@ html {
     scroll-behavior: smooth; 
 }
 body {
+    max-width: 1440px;
     min-height: 100vh;
-    margin: 0; 
+    margin: auto; 
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
@@ -72,7 +73,7 @@ body {
 .list-footer {
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:space-between;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
@@ -160,8 +161,20 @@ a:hover {
     margin: 0 280px;
  }
 
+ .section-code-examples {
+    display: flex;
+ }
+
+ .code-example-one {
+    margin: 80px -150px;
+ }
+
+ .code-example-two {
+    margin: 80px 520px;
+}
+
  .code-examples-title {
-    margin: 0 50px;
+    margin: 20px 0 0 60px;
  }
  
  .code-examples {
@@ -191,16 +204,19 @@ a:hover {
 
  .skill-item {
     font-size: 18px;
+    line-height: 2.0;
  }
 
  .education-item {
     font-size: 18px;
     margin: 0 200px;
+    line-height: 2.0;
  }
 
  .languages-item {
     font-size: 18px;
     margin: 10px -175px;
+    
  }
 
 #profile {
