@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="icon" href="./assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                  <li class="nav-item"><a href="#code-examples" class="nav-link">Code Examples</a></li>
+                  <li class="nav-item"><a href="#educations" class="nav-link">Education</a></li>
+                  <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                  <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="container">
+            <section class="section-profile" id="profile">
+                <img src="./assets/img/photo.jpg" alt="My photo" class="photo">
+                <div class="profile">
+                    <h1 class="profile-title">Konstantin Polubotonov</h1>
+                    <h2>System administrator</h2>
+                </div>
+            </section>
+            <section class="section-about" id="contacts">
+                <div class="container-contacts">
+                    <h2 class="contacts-title">Contacts:</h2>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            Russia, Novosibirsk
+                        </li>
+                        <li class="contact-item">
+                            <a href="mailto:alias1322@gmail.com">alias1322@gmail.com</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="https://discord.gg/gFnRh8Sudg">Konstantin (Alias-nsk)</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="https://github.com/Alias-nsk/">Alias-nsk</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-about">
+                    <h2 class="about-title" id="about">About me:</h2>
+                    <p>I am 38 years old. Currently I work as a system administrator, but I always wanted to try myself as a front-end developer. I have little experience writing small programs on C++ and C#, but I never tried to do site layout.
+                    <p><strong>My goal</strong> is obtaining new knowledge in the field of Front-End developing.</p> 
+                    <p><strong>My qualities:</strong> Responsibility, high learning ability, perseverance, hard work.</p>
+                </div>
+            </section>  
+            <section class="section-skills" id="skills">
+                <div class="container-skills">
+                    <h2 class="skills-title">Skills:</h2>
+                    <ul class="skills-list">
+                        <li class="skill-item">
+                            HTML5, CSS3
+                        </li>
+                        <li class="skill-item">
+                            JavaScript (Basics)
+                        </li>
+                        <li class="skill-item">
+                            C++
+                        </li>
+                        <li class="skill-item">
+                            C#
+                        </li>
+                        <li class="skill-item">
+                            Git
+                        </li>
+                        <li class="skill-item">
+                            VSCode
+                        </li>
+                        <li class="skill-item">
+                            Microsoft Visual Studio 2015 - 2019
+                        </li>
+                      </ul>
+                      <br><br>
+                </div>
+                <div class="container-education">
+                    <h2 class="education-title">Education:</h2>
+                    <ul class="education-list">
+                        <li class="education-item">
+                            Novosibirsk State Technical University
+                            <ul>
+                                <li>2000 - 2005, Software engineer</li>
+                            </ul> 
+                        </li>
+                    </ul>
+                    <br><br>
+                </div>
+              
+            </section>
+            <section class="section-code-examples" id="code-examples">
+                <h2 class="code-examples-title">Code Examples:</h2>
+                <div class=code-example-one>
+                    <pre class="javascript" style="font-family:monospace;"><span style="color: #000066; font-weight: bold;">function</span> finalGrade <span style="color: #009900;">&#40;</span>exam<span style="color: #339933;">,</span> projects<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+  <span style="color: #000066; font-weight: bold;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #009900;">&#40;</span>exam <span style="color: #339933;">&gt;</span> <span style="color: #CC0000;">90</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">||</span> projects <span style="color: #339933;">&gt;</span> <span style="color: #CC0000;">10</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #CC0000;">100</span><span style="color: #339933;">;</span>
+  <span style="color: #009900;">&#125;</span>
+  <span style="color: #000066; font-weight: bold;">else</span> <span style="color: #000066; font-weight: bold;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #009900;">&#40;</span>exam <span style="color: #339933;">&gt;</span> <span style="color: #CC0000;">75</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">&amp;&amp;</span> projects <span style="color: #339933;">&gt;=</span> <span style="color: #CC0000;">5</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #CC0000;">90</span><span style="color: #339933;">;</span>
+  <span style="color: #009900;">&#125;</span>
+  <span style="color: #000066; font-weight: bold;">else</span> <span style="color: #000066; font-weight: bold;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #009900;">&#40;</span>exam <span style="color: #339933;">&gt;</span> <span style="color: #CC0000;">50</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">&amp;&amp;</span> projects <span style="color: #339933;">&gt;=</span> <span style="color: #CC0000;">2</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #CC0000;">75</span><span style="color: #339933;">;</span>
+  <span style="color: #009900;">&#125;</span>
+  <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #CC0000;">0</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">&#125;</span></pre>
+                </div>
+                <div class=code-example-two>
+                    <pre class="javascript" style="font-family:monospace;"><span style="color: #000066; font-weight: bold;">function</span> fakeBin<span style="color: #009900;">&#40;</span>x<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+  let fakeNumber <span style="color: #339933;">=</span> <span style="color: #3366CC;">''</span><span style="color: #339933;">;</span>
+  &nbsp;
+  <span style="color: #000066; font-weight: bold;">for</span> <span style="color: #009900;">&#40;</span>let i <span style="color: #339933;">=</span> <span style="color: #CC0000;">0</span><span style="color: #339933;">;</span> i <span style="color: #339933;">&lt;</span> x.<span style="color: #660066;">length</span><span style="color: #339933;">;</span> i<span style="color: #339933;">++</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #000066; font-weight: bold;">if</span> <span style="color: #009900;">&#40;</span>parseInt<span style="color: #009900;">&#40;</span>x<span style="color: #009900;">&#91;</span>i<span style="color: #009900;">&#93;</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">&gt;=</span> <span style="color: #CC0000;">5</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+      fakeNumber <span style="color: #339933;">+=</span> <span style="color: #3366CC;">'1'</span><span style="color: #339933;">;</span>
+    <span style="color: #009900;">&#125;</span> <span style="color: #000066; font-weight: bold;">else</span> <span style="color: #009900;">&#123;</span>
+      fakeNumber <span style="color: #339933;">+=</span> <span style="color: #3366CC;">'0'</span><span style="color: #339933;">;</span>
+    <span style="color: #009900;">&#125;</span>
+  <span style="color: #009900;">&#125;</span>
+  <span style="color: #000066; font-weight: bold;">return</span> fakeNumber<span style="color: #339933;">;</span>
+<span style="color: #009900;">&#125;</span></pre>
+                </div>
+            </section>
+            <section class="section-projects-lang" id="projects">
+                <div class="container-projects">
+                    <h2 class="projects-title">Projects:</h2>
+                    <div class=projects>
+                        <ul class="projects-list">
+                            <li class="projects-item">
+                                <a href="https://alias-nsk.github.io/rsschool-cv/"><p>My CV</p></a>
+                            </li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+                <div class="container-languages">
+                    <h2 class="languages-title">Languages:</h2>
+                    <div class=languages>
+                        <ul class="languages-list">
+                            <li class="languages-item">
+                                Russian - native
+                            </li>
+                            <li class="languages-item">
+                                English - Pre-Intermediate (B1)
+                            </li>
+                            <li class="languages-item">
+                                Japanese - Elementary (A1)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container-footer">
+            <ul class="list-footer">
+                <li class="li-footer"><a href="https://github.com/Alias-nsk" target="_blank">
+                    <img src="./assets/svg/4.svg" height="50" alt=""></a></li>
+                <li class="year"><span class="year-font">2022</span></li>
+                <li class="rss"><a href="https://rs.school/js/" target="_blank"><img src="./assets/svg/rs_school_js.svg" height="50" alt="" class="rs"></a></li>        
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
