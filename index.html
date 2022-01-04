@@ -54,7 +54,7 @@
                 </div>
                 <div class="container-about">
                     <h2 class="about-title" id="about">About me:</h2>
-                    <p>I am 38 years old. ﾐ｡urrently I work as a system administrator, but I always wanted to try myself as a front-end developer. I have little experience writing small programs on C++ and C#, but I never tried to do site layout.
+                    <p>I am 38 years old. Currently I work as a system administrator, but I always wanted to try myself as a front-end developer. I have little experience writing small programs on C++ and C#, but I never tried to do site layout.
                     <p><strong>My goal</strong> is obtaining new knowledge in the field of Front-End developing.</p> 
                     <p><strong>My qualities:</strong> Responsibility, high learning ability, perseverance, hard work.</p>
                 </div>
@@ -102,20 +102,34 @@
               
             </section>
             <section class="section-code-examples" id="code-examples">
-                <div class="container-code-examples">
-                    <h2 class="code-examples-title">Code Examples:</h2>
-                    <div class=code-examples>
-                        <pre>function isDivideBy(number, a, b) {                                            function capitalizeWord(word) {
-    if(number % a === 0 && number % b === 0) {                                     return `${word[0].toUpperCase()}${word.slice(1)}`;
-        return  true;                                                          } 
-    }
-    else {
-        return false;
-    }
-}
-</pre>
-                        <br><br>
-                    </div>
+                <h2 class="code-examples-title">Code Examples:</h2>
+                <div class=code-example-one>
+                    <pre class="javascript" style="font-family:monospace;"><span style="color: #000066; font-weight: bold;">function</span> finalGrade <span style="color: #009900;">&#40;</span>exam<span style="color: #339933;">,</span> projects<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+  <span style="color: #000066; font-weight: bold;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #009900;">&#40;</span>exam <span style="color: #339933;">&gt;</span> <span style="color: #CC0000;">90</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">||</span> projects <span style="color: #339933;">&gt;</span> <span style="color: #CC0000;">10</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #CC0000;">100</span><span style="color: #339933;">;</span>
+  <span style="color: #009900;">&#125;</span>
+  <span style="color: #000066; font-weight: bold;">else</span> <span style="color: #000066; font-weight: bold;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #009900;">&#40;</span>exam <span style="color: #339933;">&gt;</span> <span style="color: #CC0000;">75</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">&amp;&amp;</span> projects <span style="color: #339933;">&gt;=</span> <span style="color: #CC0000;">5</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #CC0000;">90</span><span style="color: #339933;">;</span>
+  <span style="color: #009900;">&#125;</span>
+  <span style="color: #000066; font-weight: bold;">else</span> <span style="color: #000066; font-weight: bold;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #009900;">&#40;</span>exam <span style="color: #339933;">&gt;</span> <span style="color: #CC0000;">50</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">&amp;&amp;</span> projects <span style="color: #339933;">&gt;=</span> <span style="color: #CC0000;">2</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #CC0000;">75</span><span style="color: #339933;">;</span>
+  <span style="color: #009900;">&#125;</span>
+  <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #CC0000;">0</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">&#125;</span></pre>
+                </div>
+                <div class=code-example-two>
+                    <pre class="javascript" style="font-family:monospace;"><span style="color: #000066; font-weight: bold;">function</span> fakeBin<span style="color: #009900;">&#40;</span>x<span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+  let fakeNumber <span style="color: #339933;">=</span> <span style="color: #3366CC;">''</span><span style="color: #339933;">;</span>
+  &nbsp;
+  <span style="color: #000066; font-weight: bold;">for</span> <span style="color: #009900;">&#40;</span>let i <span style="color: #339933;">=</span> <span style="color: #CC0000;">0</span><span style="color: #339933;">;</span> i <span style="color: #339933;">&lt;</span> x.<span style="color: #660066;">length</span><span style="color: #339933;">;</span> i<span style="color: #339933;">++</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #000066; font-weight: bold;">if</span> <span style="color: #009900;">&#40;</span>parseInt<span style="color: #009900;">&#40;</span>x<span style="color: #009900;">&#91;</span>i<span style="color: #009900;">&#93;</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">&gt;=</span> <span style="color: #CC0000;">5</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+      fakeNumber <span style="color: #339933;">+=</span> <span style="color: #3366CC;">'1'</span><span style="color: #339933;">;</span>
+    <span style="color: #009900;">&#125;</span> <span style="color: #000066; font-weight: bold;">else</span> <span style="color: #009900;">&#123;</span>
+      fakeNumber <span style="color: #339933;">+=</span> <span style="color: #3366CC;">'0'</span><span style="color: #339933;">;</span>
+    <span style="color: #009900;">&#125;</span>
+  <span style="color: #009900;">&#125;</span>
+  <span style="color: #000066; font-weight: bold;">return</span> fakeNumber<span style="color: #339933;">;</span>
+<span style="color: #009900;">&#125;</span></pre>
                 </div>
             </section>
             <section class="section-projects-lang" id="projects">
